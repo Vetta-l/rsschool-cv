@@ -1,1 +1,1 @@
-https://Vetta-l.github.io/rsschool-cv/cv
+https://Vetta-l.github.io/rsschool-cv/rsschool-cv-html
