@@ -149,6 +149,13 @@ footer {
     color: #1a1817;
     display: block;
 }
+.block-item .img-wrap {
+    max-width: 150px;
+}
+.block-item .img-wrap img {
+    display: block;
+    width: 100%;
+}
 .block-item:last-child {
     margin-bottom: 30px;
 }
@@ -188,6 +195,9 @@ footer {
     width: 100%;
     height: 1px;
     background: #1a1817;
+}
+.footer .block-item:last-child {
+    margin-bottom: 0;
 }
 
 @media(max-width: 767px){
