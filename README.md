@@ -1,1 +1,1 @@
-# rsschool-cv
+https://Vetta-l.github.io/rsschool-cv/cv
