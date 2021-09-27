@@ -314,6 +314,36 @@ footer {
   display: block;
   width: 100%;
 }
+.welcom-slider-counter-wrap {
+  color: var(--font-white);
+  font-size: var(--font4);
+  line-height: 40px;
+  width: 100%;
+  max-width: 76px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 40px;
+  left: 74px;
+}
+.welcom-slider-current {
+  margin-right: 10px;
+}
+.welcom-slider-count {
+  position: relative;
+  padding-left: 16px;
+  box-sizing: border-box;
+}
+.welcom-slider-count:before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  width: 2px;
+  height: 16px;
+  background: var(--font-white);
+  margin-top: -8px;
+}
 .btn {
   display: block;
   text-decoration: none;
