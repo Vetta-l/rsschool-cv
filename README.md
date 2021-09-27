@@ -1,1 +1,1 @@
-https://Vetta-l.github.io/rsschool-cv
+https://Vetta-l.github.io/museum
