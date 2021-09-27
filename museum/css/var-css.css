@@ -1,0 +1,17 @@
+:root {
+    --bg-dark: #030303;
+    --color-red: #710707;
+    --color-gold: #9d8665;
+
+    --font-gold: #9d8665;
+    --font-white: #ffffff;
+
+    --font-family-base: 'Roboto';
+    --font-family-title: 'Forum';
+
+    --font1: 80px;
+    --font2: 32px;
+    --font3: 28px;
+    --font4: 22px;
+    --font5: 18px;
+}
