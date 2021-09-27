@@ -134,7 +134,7 @@ footer {
 }
 .header {
   background: var(--bg-dark);
-  padding: 74px 0 76px;
+  padding: 59px 0 58px;
 }
 .header-wrap {
   display: -webkit-box;
@@ -219,7 +219,7 @@ footer {
 .logo span {
   display: block;
   font-size: var(--font3);
-  line-height: 50px;
+  line-height: 33px;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: var(--font-white);
@@ -258,6 +258,12 @@ footer {
   position: relative;
   min-height: 750px;
 }
+.welcome .center {
+  position: relative;
+}
+.welcom-slider-wrap {
+  padding-bottom: 60px;
+}
 .welcome .title {
   color: var(--font-white);
   width: 100%;
@@ -278,17 +284,35 @@ footer {
   letter-spacing: 2px;
   font-weight: 300;
 }
-.welcome-slide {
+ 
+.welcome-content {
+  align-self: flex-end;
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
-  width: 50%;
-  background: url("../img/wel-background.jpg") no-repeat top center;
-  background-size: cover;
-}
-.welcome-content {
+  left: 0;
   padding-top: 114px;
+}
+.welcom-slider-nav {
+  background:  var(--bg-dark);
+  width: 100%;
+  max-width: 600px;
+  height: 120px;
+  position: absolute;
+  bottom: 0;
+  right: 0; 
+  box-sizing: border-box;
+}
+.welcom-slider-item .welcome-content-center {
+  display: flex; 
+  flex-direction: column;
+  position: relative;
+}
+.welcome-img {
+  align-self: flex-end;
+}
+.welcome-img img {
+  display: block;
+  width: 100%;
 }
 .btn {
   display: block;
@@ -790,71 +814,42 @@ input[type='radio']:checked + label:after {
 }
 .slick-prev {
   position: absolute;
-  top: 50%;
-  left: 10px;
+  bottom: 52px;
+  right: 125px;
   width: 30px;
-  height: 30px;
+  height: 16px;
   border: 0;
   font-size: 0;
   cursor: pointer;
-  background: none;
+  background: url(../img/arr-slider.svg) no-repeat center center; 
   z-index: 1;
   padding: 0;
   margin-top: -15px;
 }
-.slick-prev:after {
-  content: '';
-  position: absolute;
-}
-.slick-prev:after {
-  top: 50%;
-  left: 10px;
-  width: 20px;
-  height: 20px;
-  margin-top: -10px;
-  border-left: 1px solid #f00;
-  border-bottom: 1px solid #f00;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
+ 
 .slick-next {
   position: absolute;
-  top: 50%;
-  right: 10px;
+  bottom: 52px;
+  right: 75px;
   width: 30px;
-  height: 30px;
+  height: 16px;
   border: 0;
   font-size: 0;
   cursor: pointer;
-  background: none;
+  background: url(../img/arr-slider.svg) no-repeat center center;
+  transform: rotate(180deg) ;
   z-index: 1;
   padding: 0;
   margin-top: -15px;
 }
-.slick-next:after {
-  content: '';
-  position: absolute;
-}
-.slick-next:after {
-  top: 50%;
-  right: 10px;
-  width: 20px;
-  height: 20px;
-  margin-top: -10px;
-  border-left: 1px solid #f00;
-  border-bottom: 1px solid #f00;
-  -webkit-transform: rotate(-135deg);
-      -ms-transform: rotate(-135deg);
-          transform: rotate(-135deg);
-}
+ 
+ 
 .slick-dots {
   position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
+  bottom: 52px; 
+  right: 215px;
   margin: auto;
-  max-width: 170px;
+  max-width: 180px;
   width: 100%;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -865,12 +860,13 @@ input[type='radio']:checked + label:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 2;
 }
 .slick-dots li {
   margin: 0 4px;
-  width: 17px;
-  height: 2px;
-  background: #f00;
+  width: 16px;
+  height: 16px;
+  background: #fff;
   cursor: pointer;
 }
 .slick-dots li button {
@@ -883,7 +879,7 @@ input[type='radio']:checked + label:after {
   font-size: 0;
 }
 .slick-dots li.slick-active {
-  background: #000;
+  background: #D2B183;
 }
 [dir='rtl'] .slick-slide {
   float: right;
