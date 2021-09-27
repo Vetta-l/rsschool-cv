@@ -6,7 +6,8 @@
     <title>museum</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="css/var-css.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -136,7 +137,7 @@
         </section>
         <section id='visiting' class="visiting">
             <div class="center">
-                <div class="title">Virtual tour</div>
+                <h2 class="title">Virtual tour</h2>
                 <div class="visiting-list">
                     <a target="_blank" href="tours/tour2.html" class="visiting-item">
                         <img src="img/visiting-img-1.jpg" alt="Royal Palace">
@@ -193,13 +194,18 @@
             <div class="center">
                 <div class="explore-list">
                     <div class="explore-item">
-                        <div class="title">Picture explore</div>
+                        <h2 class="title">Picture explore</h2>
                         <p>Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
                         <p>It was cleaned in 1984 to remove a <span>"yellow veil"</span>  of dust that had gathered since the previous restoration in the 19th century.</p>
                         <p>The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
                     </div>
-                    <div class="explore-item">
-                        <img src="img/explore-img.jpg" alt="Las Meninas">
+                    <div class="explore-item explore-item-img">
+                        <div class="explore-item-before-scr">
+                            <div class="explore-item-before">
+                                <img src="img/before.jpg" alt="Las Meninas">
+                            </div>
+                        </div>
+                        <img src="img/after.jpg" alt="Las Meninas">
                     </div>
                 </div>
             </div>
@@ -207,16 +213,31 @@
         <section id="video" class="video">
             <div class="center">
                 <div class="video-block">
-                    <div class="video-block-img">
-                        <img src="img/video-img.jpg" alt="video">
-                        <span class="play"><img src="img/play.png" alt="play"></span>
-                    </div>
                     <div class="video-text-block">
                         <div class="video-text-block-item">
-                            <div class="title">Video journey</div>
+                            <h2 class="title">Video journey</h2>
                         </div>
                         <div class="video-text-block-item">
                             <p>Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
+                        </div>
+                    </div>
+                     
+                    <div class="video-block-img">
+                        <img src="img/video-img.jpg" alt="video">
+                        <span class="play"><img src="img/play.png" alt="play"></span> 
+                    </div>
+                    <div class="lazy">
+                        <div class="video-block-img">
+                            <iframe loading="lazy"  width="560" height="315" src="https://www.youtube.com/embed/zp1BXPX8jcU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-block-img">
+                            <iframe loading="lazy"  width="560" height="315" src="https://www.youtube.com/embed/Vi5D6FKhRmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-block-img">
+                            <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/NOhDysLnTvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-block-img">
+                            <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/aWmJ5DgyWPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
