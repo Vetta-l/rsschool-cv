@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
     <link href="css/main.min.css" rel="stylesheet" type="text/css" />
+
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
     <div class="header">
@@ -34,7 +37,7 @@
                         <li><a href="#visiting">Visiting</a></li>
                         <li><a href="#explore">Explore</a></li>
                         <li><a href="#video">Video</a></li>
-                        <li><a href="#video">Gallery</a></li> 
+                        <li><a href="#gallery">Gallery</a></li> 
                         <li><a href="#tickets">Tickets</a></li>
                         <li><a href="#contacts">Contacts</a></li>
                     </ul> 
@@ -243,6 +246,52 @@
                 </div>
             </div>
         </section>
+        <section id="gallery" class="gallery">
+            <div class="center">
+                <h2 class="title">Art Gallery</h2>
+                <div class="gallery-wrap">
+                    <div class="gallery-item">
+                        <img src="img/galery2.jpg" alt="galery1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/galery9.jpg" alt="galery1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/galery4.jpg" alt="galery1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/galery6.jpg" alt="galery1">
+                    </div>
+
+
+                    <div class="gallery-item">
+                        <img src="img/galery1.jpg" alt="galery1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/galery8.jpg" alt="galery1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/galery3.jpg" alt="galery1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/galery5.jpg" alt="galery1">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="img/galery7.jpg" alt="galery1">
+                    </div>    
+                    <div class="gallery-item">
+                        <img src="img/galery10.jpg" alt="galery1">
+                    </div>  
+                    <div class="gallery-item">
+                        <img src="img/galery15.jpg" alt="galery1">
+                    </div>  
+                    <div class="gallery-item">
+                        <img src="img/galery12.jpg" alt="galery1">
+                    </div>                                                                                         
+                </div>
+            </div>
+        </section>        
         <section id="tickets" class="tickets">
             <div class="center">
                 <div class="title">Buy tickets</div>
@@ -300,11 +349,14 @@
                 </div>
             </div>
         </section>
+        <div class="block-img-paralax">
+             
+        </div>
         <section id="contacts" class="contacts">
             <div class="center">
-                <div class="title">
+                <h2 class="title">
                     Contacts
-                </div>
+                </h2>
                 <div class="contacts-list">
                     <div class="contacts-address">
                         <div class="contacts-address-title">
@@ -316,11 +368,11 @@
                         <p>mail: <a href="mailto:info@louvre.fr">info@louvre.fr</a></p>
                     </div>
                     <div class="contacts-map">
-                        <img src="img/map.jpg" alt="map">
+                        <div id="map" class="map-show"></div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
     </main>
     <div class="footer">
         <div class="center">
@@ -342,7 +394,8 @@
                             <li><a href="#visiting">Visiting</a></li>
                             <li><a href="#explore">Explore</a></li>
                             <li><a href="#video">Video</a></li>
-                            <li><a href="#tickets">Tickets</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#tickets">Tickets</a></li> 
                             <li><a href="#contacts">Contacts</a></li>
                         </ul> 
                     </nav>
@@ -448,6 +501,9 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script> 
+    
+    
     <script src="js/main.min.js"></script>
+    <script type="text/javascript" src="js/map-show.js"></script>
 </body>
 </html>
